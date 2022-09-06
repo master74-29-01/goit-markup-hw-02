@@ -1,3 +1,21 @@
+body {
+    background-color: #FFFFFF;
+}
+/*удаляем точки перед списком*/
+.list {
+    list-style: none;
+}
+/*лого надо оформить в два цвета*/
+.logo {
+    color: blue;
+}
+/*site-nave*/
+.site-nave a {
+    color: #212121;
+}.site-nave a:hover, .site-nave :focus {
+    color: #2196F3;
+}
+
 /*цвет основного текста #212121*/
 /*вторичный цвет текста #757575*/
 /*цвет лого WEB #2196F3*/
