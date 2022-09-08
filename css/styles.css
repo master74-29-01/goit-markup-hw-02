@@ -41,6 +41,13 @@ body {
 .command-title {
     color: #212121;
 }
+/*footer*/
+.footer {
+background-color: #2F303A   
+}
+.footer a {
+    color: rgba(255, 255, 255, 0.6);
+}
 
 
 
