@@ -1,5 +1,6 @@
 body {
     background-color: #FFFFFF;
+    color: #757575;
 }
 /*удаляем точки перед списком*/
 .list {
@@ -12,9 +13,37 @@ body {
 /*site-nave*/
 .site-nave a {
     color: #212121;
-}.site-nave a:hover, .site-nave :focus {
+}
+.site-nave a:hover, .site-nave a:focus {
     color: #2196F3;
 }
+.contact-information  a {
+    color: #757575;
+}
+.contact-information a:hover, .contact-information a:focus {
+    color: #2196F3;
+}    
+
+/*hero*/
+/*надо доделать фон, кнопку и изменить цвет текста*/
+.hero-title {
+    color: #212121;
+}
+/*наши приемущесва*/
+.feature .title {
+    color: #212121;
+}
+/*чем мы занимаемся*/
+.section .title {
+    color: #212121;
+}
+/*наша команда*/
+.command-title {
+    color: #212121;
+}
+
+
+
 
 /*цвет основного текста #212121*/
 /*вторичный цвет текста #757575*/
