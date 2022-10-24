@@ -13,8 +13,11 @@ body {
     list-style: none;
 }
 /*лого надо оформить в два цвета*/
-.logo {
-    color: blue;
+.primary {
+    color: #2196F3;
+}
+.secondary {
+    color: #000000;
 }
 /*site-nave*/
 .site-nave a {
@@ -23,8 +26,11 @@ body {
 .site-nave a:hover, .site-nave a:focus {
     color: var(--accent-color, #2196F3);
 }
+.site-nave .link.current {
+    color: var(--accent-color, #2196F3);
+}
 .contact-information a {
-    color: var(--title-text-color);
+    color: var(--title-text-color, #757575);
 }
 .contact-information a:hover, .contact-information a:focus {
     color: var(--accent-color, #2196F3);
@@ -32,20 +38,34 @@ body {
 
 /*hero*/
 /*надо доделать фон, кнопку и изменить цвет текста*/
+.hero {
+    background-color: #2F303A
+}
 .hero-title {
-    color: var(--primary-text-color);
+    color:  #FFFFFF
+}
+/*Button*/
+.button {
+    color: #FFFFFF;
+    background-color: #2196F3;
 }
 /*наши приемущесва*/
 .feature .title {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color, #212121);
+}
+.feature .text {
+    color: var(--title-text-color, #757575);
 }
 /*чем мы занимаемся*/
 .section .title {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color, #212121);
 }
 /*наша команда*/
 .command-title {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color, #212121);
+}
+.command .text {
+   color: var(--title-text-color, #757575); 
 }
 /*footer*/
 /*надо изменить цвет лого*/
@@ -54,6 +74,21 @@ background-color: #2F303A
 }
 .footer a {
     color: rgba(255, 255, 255, 0.6);
+}
+.footer .primary {
+    color: #2196F3;
+}
+.footer .secondary {
+    color: #FFFFFF;
+}
+.footer .contacts {
+    color: #FFFFFF;
+}
+.footer .mail {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer .fon {
+    rgba(255, 255, 255, 0.6)
 }
 
 
