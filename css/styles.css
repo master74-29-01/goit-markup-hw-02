@@ -3,9 +3,7 @@
     --title-text-color: #757575
     --accent-color: #2196F3
 }
-
-
-body {
+.body {
     background-color: #FFFFFF;
 }
 /*удаляем точки перед списком*/
@@ -22,6 +20,7 @@ body {
 /*site-nave*/
 .site-nave a {
     color: #212121;
+    text-decoration: none;
 }
 .site-nave a:hover, .site-nave a:focus {
     color: var(--accent-color, #2196F3);
@@ -31,6 +30,7 @@ body {
 }
 .contact-information a {
     color: var(--title-text-color, #757575);
+    text-decoration: none;
 }
 .contact-information a:hover, .contact-information a:focus {
     color: var(--accent-color, #2196F3);
@@ -46,8 +46,21 @@ body {
 }
 /*Button*/
 .button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9px;
+    text-decoration: none;
+    text-align: center;
+
     color: #FFFFFF;
     background-color: #2196F3;
+    
 }
 /*наши приемущесва*/
 .feature .title {
@@ -88,7 +101,7 @@ background-color: #2F303A
     color: rgba(255, 255, 255, 0.6);
 }
 .footer .fon {
-    rgba(255, 255, 255, 0.6)
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
