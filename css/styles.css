@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Решта коду */
 :root {
     --primary-text-color: #212121
     --title-text-color: #757575
@@ -6,9 +13,16 @@
 .body {
     background-color: #FFFFFF;
 }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 /*удаляем точки перед списком*/
 .list {
-    list-style: none;
+    list-style-type: none;
 }
 /*лого надо оформить в два цвета*/
 .primary {
@@ -19,11 +33,25 @@
 }
 
 /*site-nave*/
-.site-nave a {
+.site-nave {
+    display: flex;
+}
+.site-nave .item + .item {
+    margin-left: 50px;
+}
+.site-nave .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: #212121;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
     text-decoration: none;
 }
-.site-nave a:hover, .site-nave a:focus {
+.site-nave .link:hover, .site-nave .link:focus {
     color: var(--accent-color, #2196F3);
 }
 .site-nave .link.current {
