@@ -16,33 +16,51 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+    width: 1600px;
     padding-left: 20px;
     padding-right: 20px;
+    outline: 2px solid tomato;
 }
 /*удаляем точки перед списком*/
 .list {
     list-style-type: none;
 }
-/*лого надо оформить в два цвета*/
+/*лого*/
 .primary {
     color: #2196F3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    margin-left: 215px;
 }
 .secondary {
     color: #000000;
+    font-family: Oleo Script;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+}
+/*cap-nav*/
+.cap-nave {
+    display: flex;
+    align-items: center;
 }
 
 /*site-nave*/
 .site-nave {
     display: flex;
+    margin-left: 90px;
 }
 .site-nave .item + .item {
     margin-left: 50px;
 }
 .site-nave .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     color: #212121;
     font-family: Roboto;
@@ -57,6 +75,16 @@
 .site-nave .link.current {
     color: var(--accent-color, #2196F3);
 }
+/*contact-information list*/
+.contact-information {
+    display: flex;
+    margin-left: auto;
+    margin-right: 215px;
+}
+.contact-information .item + .item {
+    margin-left: 50px;
+}
+
 .contact-information a {
     color: var(--title-text-color, #757575);
     text-decoration: none;
@@ -66,16 +94,19 @@
 }    
 
 /*hero*/
-/*надо доделать фон, кнопку и изменить цвет текста*/
 .hero {
     background-color: #2F303A;
     text-align: center;
+    width: auto;
+    height: 600px;
 
 }
 .hero-title {
     
     margin-top: 0;
     margin-bottom: 30;
+    padding-top: 200px;
+    padding-bottom: 0;
 
     font-family: Roboto;
     font-weight: 900;
@@ -98,6 +129,8 @@
     font-size: 16px;
     line-height: 1.9px;
     text-decoration: none;
+
+    
     
 
     color: #FFFFFF;
@@ -107,31 +140,114 @@
     
 }
 /*наши приемущесва*/
-.feature {
-    padding-left: 215px;
-    padding-right: 215px;
-}
 .container {
-    width: auto;
-    outline: 2px solid tomato;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 215px;
+    margin-right: 215px;
+    background-color: teal;
 }
 .feature .list {
+    width: 1170px;
+    padding: 0;
+    /*height: 101px;*/
     
 }
-.feature .title {
-    margin-top: 0;
-    margin-bottom: 10;
-    color: var(--primary-text-color, #212121);
+.feature .list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: tomato;
+    
 }
-.feature .text {
+
+
+.item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+}
+.item:nth-last-child(4n) {
+    margin-right: 0;
+}
+.feature .item {
+    width: 270px;
+}
+.feature .list {
+    margin-left: 215px;
+    margin-right: 215px;
+} 
+.feature .list {
     margin-top: 0;
     margin-bottom: 0;
+}
+.feature .title list {
+    color: var(--primary-text-color, #212121);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    
+    margin-top: 0;
+    margin-bottom: 0px;
+    
+}
+.feature .text list {
     color: var(--title-text-color, #757575);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    
+
+
 }
 
-/*чем мы занимаемся*/
+/*чем мы занимаемся (изменил название класса на feature first */
+.feature-first {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
-.section-title-centered {
+.feature-first-centered {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-decoration: none;
+    color: var(--primary-text-color, #212121);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50;
+}
+.work list {
+    width: 1170px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.work list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: tomato; 
+}
+.item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+}
+.item:nth-last-child(3n) {
+    margin-right: 0;
+}
+.feature .work .item {
+    width: 370px;
+}
+/*наша команда*/
+.section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.command-title-centered {
     font-family: Roboto;
     font-weight: 700;
     font-size: 36px;
@@ -140,44 +256,33 @@
     color: var(--primary-text-color, #212121);
     text-align: center;
 }
-/*наша команда*/
-
-.command-title-centered {
-font-family: Roboto;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+.command-name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
     text-decoration: none;
     color: var(--primary-text-color, #212121);
-    text-align: center;
-}
-.command-name {
-font-family: Roboto;
-font-size: 16px;
-font-weight: 500;
-line-height: 19px;
-text-decoration: none;
-color: var(--primary-text-color, #212121);
-margin-top: 0;
-margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
 }
 .command-text {
- font-family: Roboto;
- font-size: 16px;
- font-weight: 400;
- line-height: 19px;
- text-decoration: none;
- color: var(--title-text-color, #757575);
- margin-top: 0;
- margin-bottom: 10; 
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-decoration: none;
+    color: var(--title-text-color, #757575);
+    margin-top: 0;
+    margin-bottom: 10; 
 } 
 
 
 /*footer*/
 /*надо изменить цвет лого*/
 .footer {
-background-color: #2F303A   
+    background-color: #2F303A   
 }
 .footer a {
     color: rgba(255, 255, 255, 0.6);
